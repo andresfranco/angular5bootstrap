@@ -1,0 +1,16 @@
+<div class="content-box">
+    <div><h4>ALERTS</h4></div>
+    <hr>
+    <div>
+        <button type="button" class="btn btn-primary" (click)="showAlert()">Show alert</button>
+        <button type="button" class="btn btn-primary" (click)="hideAlert()">Hide alert</button>
+        <button type="button" class="btn btn-primary" (click)="showAlertTime()">Hide alert after time</button>
+    </div>
+    
+    <p>
+      <ngb-alert *ngIf="!alertClosed" (close)="hideAlert()" >
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+      </ngb-alert>
+    </p>
+    
+  </div>

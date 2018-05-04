@@ -1,0 +1,57 @@
+
+<div style="padding:20px;width:60%">
+<div><h3>Carousel With images from Ajax</h3></div>
+<hr>
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <img [src]="images[0]" alt="Random first slide">
+      <div class="carousel-caption">
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]" alt="Random second slide">
+      <div class="carousel-caption">
+        <h3>Second slide label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[2]" alt="Random third slide">
+      <div class="carousel-caption">
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+</div>
+
+<div  style="padding:20px;width:60%">
+  <div><h3>Carousel with images in assets folder</h3></div>
+  <ngb-carousel>
+      <ng-template ngbSlide>
+        <img src ="assets/img/carousel/image1.jpg" alt="Random first slide">
+        <div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>First Slide Description</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+          <img src ="assets/img/carousel/image2.jpg" alt="Random first slide">
+          <div class="carousel-caption">
+            <h3>Second slide label</h3>
+            <p>Second Slide Description</p>
+          </div>
+      </ng-template>
+      <ng-template ngbSlide>
+          <img src ="assets/img/carousel/image3.jpg" alt="Random first slide">
+          <div class="carousel-caption">
+            <h3>Third Slide</h3>
+            <p>Third Slide Description</p>
+          </div>
+      </ng-template>
+    </ngb-carousel>
+</div>
+

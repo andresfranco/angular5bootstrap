@@ -1,0 +1,17 @@
+<div class="content-box">
+  <div><h3>Collapse</h3></div>
+  <hr>
+  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+  [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+  Collapse Div
+  </button>
+</div>
+<div class="content-box">
+  <div id="collapseExample" [ngbCollapse]="isCollapsed">
+    <div class="card">
+      <div class="card-body">
+        Div content for collapse
+      </div>
+    </div>
+  </div>
+</div> 
