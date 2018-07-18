@@ -1,4 +1,4 @@
-# ANGULAR 5 and BOOTSTRAP 4 emaples
+# ANGULAR 5 and BOOTSTRAP 4 examples
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
